@@ -1,0 +1,198 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<title>
+		Rock Creek Zendo
+	</title>
+	<link rel="icon" href="http://zenmind.org/moonguy.jpg" sizes="16x16" type="image/jpg">
+	<meta name="keywords" content="Robert W Genthner, Ph.D.">
+	<link rel="stylesheet" href="Rock%20Creek%20Zendo_files/mm-style.css">
+	<script language="javascript">
+         // fill the month table with column headings
+         function heute_top() {
+	         var heute = Date();
+             //	document.write("<p>Today is "+heute+"</p>");
+             //  document.write("<p>Days colored green are days when there will be meditation practice at the Rockville Zendo.</p>")
+
+         }
+
+         heute_top();
+         function day_title(day_name) {
+	         document.write("<TD ALIGN=center WIDTH=35>"+day_name+"</TD>")
+         }
+         // fills the month table with numbers
+         function fill_table(month,month_length) { 
+	         day=1
+	         var NovDays = [2, 9, 13, 16, 18, 23, 25]
+	         var DecDays = [4, 7, 9, 14, 17, 21, 23, 28]
+	         if (month=="November" || month=="December") {
+                 // begin the new month table
+                 document.write("<TABLE BORDER=3 CELLSPACING=3 CELLPADDING=%3><TR>")
+                 document.write("<TD COLSPAN=7 ALIGN=center><B>"+month+"   "+year+"</B><TR>")
+                 // column headings
+                 day_title("Sun")
+                 day_title("Mon")
+                 day_title("Tue")
+                 day_title("Wed")
+                 day_title("Thu")
+                 day_title("Fri")
+                 day_title("Sat")
+                 // pad cells before first day of month
+                 document.write("</TR><TR>")
+                 for (var i=1;i<start_day;i++) {
+  	                  document.write("<TD>")
+                  }  // end for
+             }  // end if
+             // fill the first week of days
+             for (var i=start_day;i<8;i++) {
+  	             if ( month=="November" && (NovDays.indexOf(day)!=-1) ) {   		
+  	         	    document.write("<TD ALIGN=center style='background-color:#00FF00'>"+day+"</TD>"); }
+  	             else if ( month=="December" && (DecDays.indexOf(day)!=-1) ) {   		
+  	     	        document.write("<TD ALIGN=center style='background-color:#00FF00'>"+day+"</TD>"); }
+  	             else if (month=="December" || month=="November") { document.write("<TD ALIGN=center>"+day+"</TD>") }
+  		         day++
+             }  // end for
+             if (month=="December" || month=="November") { document.write("<TR>") }
+             // fill the remaining weeks
+             while (day <= month_length) {
+	             for (var i=1;i<=7 && day<=month_length;i++){
+		             if ( month=="November" && (NovDays.indexOf(day)!=-1) ) { 			
+		     	        document.write("<TD ALIGN=center style='background-color:#00FF00'>"+day+"</TD>"); }
+		             else if ( month=="December" && (DecDays.indexOf(day)!=-1) ) {
+         			    document.write("<TD ALIGN=center style='background-color:#00FF00'>"+day+"</TD>"); }
+		             else if (month=="December" || month=="November") { document.write("<TD ALIGN=center>"+day+"</TD>") }
+			         day++
+	             }  // end for
+                 //document.write("</TR><TR>")
+                 if (month=="December" || month=="November") { document.write("<TR>") }
+                 // the first day of the next month
+                 start_day=i
+             }  // end while
+             if (month=="December" || month=="November") { document.write("</TR></TABLE><BR>") }
+         } // end function fill_table
+         // end hiding -->
+     </script>
+</head>
+<body>
+	<br>
+	<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> <font size="+3">Dae Do Sah<br>
+    <font size="+2">Rockville Zendo
+	<ul><li><font size="+1">Satuday mornings at 11:00 am<br>
+		Varying weeknights at 7:00 pm (see <a href="#cal">calendar</a> below)<br>
+		Location: Just north of Norbeck Road near Rock Creek Park</font></li><font size="+1"><br>
+		<li><b>Please note:</b> There will be no Saturday practice on November 30 and December 28.</li>
+	</font></ul><font size="+1">
+	<br>
+	<ul class="navbar" ,="">
+		<li><a href="http://zenmind.org/daedosah.html">home</a>
+	    </li><li><a href="http://www.bagheerayoga.com/zen">adams morgan</a>
+		</li><li><a href="http://zenmind.org/zenretreats.html">retreats</a>
+		</li><li><a href="http://zenmind.org/zenlinks.html">links</a>
+		</li><li><a href="mailto:curt@zenmind.org?subject=web%20inquiry&amp;body=Please%20include%20your%20name%20and%20a%20brief%20description%20of%20your%20interest%20in%20Zen.">email</a>
+	</li></ul>
+	<a href="http://zenmind.org/rockville-location.html">Location Location Location</a><br>
+	<font size="2"> <br>
+	<font color="green"><strong>If you have not practiced with our group before, then please <a href="http://zenmind.org/firsttime.html">read this important information</a>.</strong></font><br><br>
+	<table cellpadding="10">
+			<tbody><tr><td valign="top">	
+				<table border="3" bordercolor="blue" cellpadding="10">
+				    	<tbody><tr><td valign="top">
+						<font size="+1"><strong>Weeknight (<a href="#cal">night varies</a>) Meditation Schedule</strong></font><br><br>
+						<strong>• 6:30 pm <a href="http://zenmind.org/firsttime.html">orientation for new people</a> - <font color="green">by appointment</font></strong><br><br>			            
+						<strong>7:00 Meditation Practice<br><br></strong>
+						<b>• Chanting</b><br>
+						Evening Bell Chant <br>
+						Yebul (Homage to the Three Jewels) <br>
+						Kanzeon Chanting <br>
+						Heart Sutra (Korean and English)<br>
+						Great Dharani <br><br>
+						<strong>• Silent Meditation</strong><br>
+						Kinhin (walking) 5 min.<br>
+						Zazen (sitting) 25 min.<br>
+						Kinhin 5 min.<br>
+						Zazen 25 min.<br><br>
+						<strong>• Closing</strong><br>
+						Recitation of Four Great Vows<br>
+						Sharing of Merit<br><br>
+						<strong>Formal practice ends at approximately 8:30 pm</strong><br>
+								(Followed by tea &amp; cookies and discussion)
+						</td><td valign="top">
+						<font size="+1"><strong>Saturday Morning Meditation Schedule</strong></font><br><br>
+						<strong>• 10:30 am <a href="http://zenmind.org/firsttime.html">orientation for new people</a> - <font color="green">by appointment</font></strong><br><br>
+						<strong>11:00 Meditation Practice<br><br>
+						• Chanting</strong><br>
+						Yebul/Homage to the Three Jewels<br>
+						Kanzeon Chanting <br>
+						Heart Sutra (Korean and English)<br>
+						Great Dharani <br>
+						Kwan Seum Bosal Chanting <br><br>
+						<strong>• Silent Meditation</strong><br>
+						Kinhin (walking) 5 min.<br>
+						Zazen (sitting) 25 min.<br>
+					    Kinhin 5 min.<br>
+						Zazen 25 min.<br><br>
+						<strong>• Closing</strong><br>
+						Recitation of Four Great Vows<br>
+						Sharing of Merit<br><br>
+						<strong>Formal practice ends at approximately 12:30 pm</strong><br>
+								(Followed by tea and cookies and discussion)
+                        </td><td valign="top">
+						<img src="Rock%20Creek%20Zendo_files/kwanyin-trans.gif" alt="Kwan Yin" align="right">
+						</td></tr>
+			</tbody></table>
+			<br><strong>Four Great Vows:</strong><br>
+			Sentient Beings are numberless, we vow to save them all<br>
+			Delusions are endless, we vow to extinguish them all<br>
+		    The teachings are infinite, we vow to learn them all<br>
+			The Buddha Way in inconceivable, we vow to attain it<br><br>
+			<strong>Sharing of Merit:</strong><br>
+			May whatever excellent qualities<br>
+			we have gained from this practice<br>
+			be extended for the benefit of all beings<br>
+			(from "Awakening of Faith" by Asvaghosa)<br><br>
+			Our group meditations are free (donations are always welcome - a $2 -
+ $5 donation is suggested for non-members). Occassionally practice might
+ be cancelled or rescheduled due to holidays or scheduling conflicts. If
+ you have any doubts, please call ahead! Contact us for detailed maps 
+and directions. <br><br>
+			<strong>For more information </strong>please <a href="mailto:curt@zenmind.org?subject=web%20inquiry&amp;body=Please%20include%20your%20name%20and%20a%20brief%20description%20of%20your%20interest%20in%20Zen.">email us</a>.
+			</td></tr>
+	</tbody></table>
+	<br>
+	<span id="cal"><p class="banner12">And here is the calendar for all meditation sessions at the Rockville 
+	Zendo for November and December 2013:</p></span>
+	(Days marked in green are days when there will be group practice at the Zendo.)<br><br>
+	<script language="javascript">
+					    // year
+                        year=2013
+                       // first day of the week of the new year
+                       today= new Date("January 1, "+year)
+                       start_day = today.getDay() + 1   // starts with 0
+                       fill_table("January",31)
+                       fill_table("February",28)
+                       fill_table("March",31)
+                       fill_table("April",30)
+                       fill_table("May",31)
+                       fill_table("June",30)
+                       fill_table("July",31)
+                       fill_table("August",31)
+                       fill_table("September",30)
+                       fill_table("October",31) 
+                       fill_table("November",30)
+                       fill_table("December",31)
+    </script><table border="3" cellpadding="%3" cellspacing="3"><tbody><tr><td colspan="7" align="center"><b>November   2013</b></td></tr><tr><td align="center" width="35">Sun</td><td align="center" width="35">Mon</td><td align="center" width="35">Tue</td><td align="center" width="35">Wed</td><td align="center" width="35">Thu</td><td align="center" width="35">Fri</td><td align="center" width="35">Sat</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td align="center">1</td><td style="background-color:#00FF00" align="center">2</td></tr><tr><td align="center">3</td><td align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td style="background-color:#00FF00" align="center">9</td></tr><tr><td align="center">10</td><td align="center">11</td><td align="center">12</td><td style="background-color:#00FF00" align="center">13</td><td align="center">14</td><td align="center">15</td><td style="background-color:#00FF00" align="center">16</td></tr><tr><td align="center">17</td><td style="background-color:#00FF00" align="center">18</td><td align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td style="background-color:#00FF00" align="center">23</td></tr><tr><td align="center">24</td><td style="background-color:#00FF00" align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td></tr><tr></tr></tbody></table><br><table border="3" cellpadding="%3" cellspacing="3"><tbody><tr><td colspan="7" align="center"><b>December   2013</b></td></tr><tr><td align="center" width="35">Sun</td><td align="center" width="35">Mon</td><td align="center" width="35">Tue</td><td align="center" width="35">Wed</td><td align="center" width="35">Thu</td><td align="center" width="35">Fri</td><td align="center" width="35">Sat</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td align="center">1</td><td align="center">2</td><td align="center">3</td><td style="background-color:#00FF00" align="center">4</td><td align="center">5</td><td align="center">6</td><td style="background-color:#00FF00" align="center">7</td></tr><tr><td align="center">8</td><td style="background-color:#00FF00" align="center">9</td><td align="center">10</td><td align="center">11</td><td align="center">12</td><td align="center">13</td><td style="background-color:#00FF00" align="center">14</td></tr><tr><td align="center">15</td><td align="center">16</td><td style="background-color:#00FF00" align="center">17</td><td align="center">18</td><td align="center">19</td><td align="center">20</td><td style="background-color:#00FF00" align="center">21</td></tr><tr><td align="center">22</td><td style="background-color:#00FF00" align="center">23</td><td align="center">24</td><td align="center">25</td><td align="center">26</td><td align="center">27</td><td style="background-color:#00FF00" align="center">28</td></tr><tr><td align="center">29</td><td align="center">30</td><td align="center">31</td></tr><tr></tr></tbody></table><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 START -->
+<script type="text/javascript" src="Rock%20Creek%20Zendo_files/count.js"></script>
+<script type="text/javascript"><!--
+wm_custnum='8843e05dd47bcaa9';
+wm_page_name='rockville.html';
+wm_group_name='/services/webpages/z/e/zenmind.org/public';
+wm_campaign_key='campaign_id';
+wm_track_alt='';
+wiredminds.count();
+// -->
+</script>
+<!-- WiredMinds eMetrics tracking with Enterprise Edition V5.4 END -->
+
+
+</font></font></font></font></font></body></html>
